@@ -493,7 +493,9 @@ saveCardAsImage = function () {
     var element = document.createElement('a');
     data = readControls();
     element.setAttribute('href', document.getElementById('canvas').toDataURL('image/png'));
-    element.setAttribute('download', "bloodbowl_" + data.teamName?.replace(/ /g, "_") + "_" + data.cardName?.replace(/ /g, "_") + ".png");
+    element.setAttribute('download', "bloodbowl_" + (data.teamName?.replace(/ /g, "_") ?? "") + "_" + (data.cardName?.replace(/ /g, "_") ?? "") + ".png"
+);
+
     element.style.display = 'none';
     document.body.appendChild(element);
     element.click();
