@@ -244,8 +244,8 @@ drawDevelopment = function (primary, secondary) {
     writeScaled(i18next.t('card.caracteristics.primary')+":", { x: x, y: 890 });
     writeScaled(i18next.t('card.caracteristics.secondary')+":", { x: x, y: 930 });
     getContext().font = '24px franklin-gothic-book';
-    writeScaled(primary, { x: x+112, y: 890 });
-    writeScaled(secondary, { x: x+141, y: 930 });
+    writeScaled(primary, { x: x+102, y: 890 });
+    writeScaled(secondary, { x: x+131, y: 930 });
 }
 
 async function drawCardFrame(cardData) {
