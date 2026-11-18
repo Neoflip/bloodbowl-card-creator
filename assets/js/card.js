@@ -240,7 +240,7 @@ drawDevelopment = function (primary, secondary) {
     getContext().fillStyle = 'black';
     getContext().textAlign = "left";
     getContext().textBaseline = "middle";
-    x = 261;
+    x = 281;
     writeScaled(i18next.t('card.caracteristics.primary')+":", { x: x, y: 890 });
     writeScaled(i18next.t('card.caracteristics.secondary')+":", { x: x, y: 930 });
     getContext().font = '24px franklin-gothic-book';
